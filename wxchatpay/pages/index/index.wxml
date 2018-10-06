@@ -1,0 +1,38 @@
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <view class="current-header-user">
+    <view class="user-number">用户编号:
+      <input name="weChatNumber" value='{{number}}' placeholder='填写设备编号' />
+    </view>
+  </view>
+  <view class="section section_gap">
+    <radio-group name="type" class="radio-group" bindchange="typeChange">
+      <view class="charge-type">选择充电类型:
+        <radio name="type" value="0" bindtap='radio' checked="true" />非会员固定金额
+      </view>
+    </radio-group>
+  </view>
+
+  <view class="current-device">
+    <view class="charge-device">当前充电设备 :
+    <input name="deviceNo" value='{{deviceNo}}' placeholder='填写设备编号' />
+    </view>
+  </view>
+
+  <view>
+    <view class="charge-fee">充电金额(元):</view> 
+    <radio-group class="radio-group" name="fee" bindchange="radioChange">
+      <radio class='tr' value="1" bindtap='radio' checked='true' />1
+      <radio class='tr' value="2" bindtap='radio' />2
+      <radio class='tr' value="3" bindtap='radio' />3
+      <radio class='tr' value="4" bindtap='radio' />4
+      <radio class='tr' bindtap='radioInput' checked='' value='{{inputValue}}'>
+        <input type='number' value='{{inputValue}}' disabled='{{isdis}}' class="input" name="feeput" placeholder="自定义金额" bindinput="feeInput" />
+      </radio>
+    </radio-group>
+  </view>
+
+  <view class="btn-area">
+    <button class='wechatpay' bindtap='wechatpay' type="primary" formType="submit" size="default"> 微信支付 </button>
+    <button class='alipay' bindtap='alipay' type="primary" formType="submit" size="default"> 支付宝支付 </button>
+  </view>
+</form>

@@ -1,0 +1,62 @@
+.current-header-user {
+  background-color: #52cc76;
+}
+
+.user-number {
+  margin-left: 10rpx;
+  color: #343031;
+}
+
+.radio-group {
+  margin-left: 10rpx;
+  margin-top: 50rpx;
+}
+
+.charge-type {
+  float: left;
+}
+
+.radio {
+  margin-left: 10rpx;
+  float: left;
+}
+
+.current-device {
+
+}
+
+.charge-device {
+  margin-left: 10rpx;
+  margin-top: 150rpx;
+}
+
+.charge-device deviceNo {
+  float: left;
+}
+
+.radio-group {
+}
+
+.charge-fee {
+  margin-left: 10rpx;
+  margin-top: 40rpx;
+  margin-bottom: -70rpx;
+}
+
+.tr {
+  margin-left: 20rpx;
+  margin-top: 40rpx;
+  margin-bottom: 10rpx;
+}
+
+.input {
+  margin-top: 5rpx;
+}
+
+.wechatpay {
+  margin-top: 35rpx;
+}
+
+.alipay {
+  margin-top: 35rpx;
+}
